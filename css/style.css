@@ -14,7 +14,7 @@ nav{
     height: 70px;
     margin: auto;
 }
-nav a {
+a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -38,9 +38,11 @@ nav li:hover{
     background-color: black;
     cursor:pointer;
 }
-/* nav p {
+span {
     clear: both;
-} */
+    width: 0px !important;
+    height: 0px !important;
+}
 main {
     width: 960px;
     margin: auto;
@@ -49,27 +51,76 @@ main :first-child img {
     margin: 30px 0 30px 0;
     width: 100%;
 }
-main :nth-child(2){
+main div:nth-child(2){
     overflow: hidden;
 }
-main :nth-child(2) :nth-child(1){
+main div:nth-child(2) img:nth-child(1){
     margin: 0 30px 30px 0;
     width: 300px;
     height: 375px;
     display: block;
     float: left;
 }
-main :nth-child(2) :nth-child(2){
+main div:nth-child(2) img:nth-child(2){
     margin: 0 30px 30px 0;
     width: 300px;
     height: 375px;
     display: block;
     float: left;
 }
-main :nth-child(2) :nth-child(3){
+main div:nth-child(2) img:nth-child(3){
     margin: 0px 0px 30px 0;
     width: 300px;
     height: 375px;
     display: block;
     float: left;
+}
+
+main div:nth-child(4) {
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+main div:nth-child(4) img {
+    margin: 0px 30px 30px 0;
+    width: 480px;
+    display: block;
+    float: left;
+}
+main div:nth-child(4) article:nth-child(2) {
+    float: left;
+    width: 450px;
+    height: 400px;
+} 
+
+
+main div:nth-child(4) article:nth-child(2) h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main div:nth-child(4) article:nth-child(2) p {
+    font-size: 20px;
+    height: 312px;
+    /* text-overflow: clip; */
+    overflow: scroll;   
+    margin-bottom: 7px;
+}
+main div:nth-child(4) article:nth-child(2) button {
+    color: honeydew;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    transition-duration: 350ms;
+
+}
+main div:nth-child(4) article:nth-child(2) button:hover {
+background-color:#504b4b ;
+cursor: pointer;
+}
+footer{
+    background-color: #504b4b;
+    padding: 20px 0;
+    height: 70px;
 }
